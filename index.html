@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Dylan Moberg || Web Developer</title>
+	<title>Dylan Moberg | Web Developer</title>
 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 	<header>
 		<nav id="topNav">
 		<img src="./img/Drawing.png" alt="">
 			<ul>
-				<li class="topLink">About</li>
-				<li class="topLink">Contact</li>
+				<li class="topLink" id="about">About</li>
+				<li class="topLink" id="work">Work</li>	
+				<li class="topLink" id="contact">Contact</li>
 			</ul>
 		</nav>
 	</header>
@@ -25,26 +27,35 @@
 	  </article>
 	</section>
 	<section class="section" id="aboutSection">
-		<article>
-			<h1>About Me</h1>
-			<p></p>
+		<h4 class="headlines">About Me</h4>
+		<article id="mainArticle">
+			<p>I am a full-stack JavaScript developer. My code is clear, modular and follows the paradigm of object-oriented programming. I enjoy creating dynamic, data-driven web applications. In my free time I enjoy Seattle Mariners Baseball, exploring the majestic Pacific Northwest and a nice steak, medium rare. I am always looking for new opportunities, feel free to contact me! </p>
+			<img id="headshot" src="./img/dylan_moberg.png" alt="">
 		</article>
 	</section>
+	<span class="coolline"></span>
+	<h4 class="headlines" id="projectHeadline">Projects</h4>
 	<section class="section" id="projectSection">
+    
 		<article class="projects">
-			
+			<a href="http://listage.herokuapp.com"><img src="./img/website_screenshots/listage.png" alt=""></a>
 		</article>
 		<article class="projects">
-			
+			<a href="http://myneighborhood.herokuapp.com"><img src="./img/website_screenshots/my_neighborhood.png" alt=""></a>
 		</article>
 		<article class="projects">
-			
+			<a href="http://harmonyze.herokuapp.com"><img src="./img/website_screenshots/harmonyze.png" alt=""></a>
 		</article>
 	</section>
+	<span class="coolline" id="projectCoolline"></span>
+  <h4 class="headlines">Contact Information</h4>
+  
+
 	<footer>
 		<nav id="bottomNav">
 			
 		</nav>
 	</footer>
+	<script src="./js/app.js"></script>
 </body>
 </html>
