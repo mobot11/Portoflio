@@ -9,4 +9,5 @@ $(document).ready(function() {
       scrollTop: $("#projectSection").offset().top 
     }, 1000);
   });
+  console.log('hello world');
 });
