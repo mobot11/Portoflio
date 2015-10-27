@@ -112,10 +112,18 @@ body {
   margin-right: 3.5em;
 }
 
-.projects img {
+.projects {
+	position: relative;
 	width: 250px;
 	height: 215px;
 }
+
+.projects img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
 
 #projectHeadline {
 	margin-top: 6em;
@@ -124,5 +132,11 @@ body {
 #projectCoolline {
 	margin-top: 6em;
 }
+
+.overlay:hover {
+	content: 'fuck you';
+}
+
+
 
 
